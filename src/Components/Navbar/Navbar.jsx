@@ -6,6 +6,8 @@ import bell_icon from '../../assets/bell_icon.svg'
 import profile_img from '../../assets/profile_img.png'
 import caret_icon from '../../assets/caret_icon.svg'
 import { logout } from '../../firebase'
+import Login from '../Pages/Login/Login'
+import { Link } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -33,7 +35,7 @@ const Navbar = () => {
         <img src={profile_img} alt="" className='profile' />
         <img src={caret_icon} alt=""  />
         <div className="dropdown">
-          <p onClick={()=>{logout()}}>Sign Out of Netflix</p>
+          <Link to={'./Login'} className='link'> <p >Sign Out of Netflix</p></Link>
         </div>
 
 

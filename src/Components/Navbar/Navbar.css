@@ -77,6 +77,11 @@ display: none;
     background: #141414;
  }
 
+ .link{
+    text-decoration: none;
+    color: white;
+ }
+
 @media(max-width:800px){
     .navbar{
         padding: 20px 4%;
